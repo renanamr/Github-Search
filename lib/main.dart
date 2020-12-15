@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart' show MaterialApp,ThemeData,Color,runApp;
-import 'package:github_search/src/Home/Home.dart';
+import 'package:github_search/src/ui/Home.dart';
 
 void main() =>
     runApp(

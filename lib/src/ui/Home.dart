@@ -8,15 +8,16 @@ class Home extends StatelessWidget {
         title: Text('Github Search'),
       ),
       body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(8.0,8.0,8.0,0.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            mainAxisAlignment: MainAxisAlignment.start,
-            mainAxisSize: MainAxisSize.max,
-            children: [
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisSize: MainAxisSize.max,
+          children: [
 
-              TextField(
+            Padding(
+              padding: const EdgeInsets.fromLTRB(8.0,8.0,8.0,2.0),
+
+              child: TextField(
                 decoration: InputDecoration(
                   labelText: 'Pesquisa',
                   border: OutlineInputBorder(
@@ -24,11 +25,8 @@ class Home extends StatelessWidget {
                       borderSide: BorderSide(color: Colors.blue)),
                 ),
               ),
-
-
-
+            ),
             ],
-          ),
         ),
       ),
     );
