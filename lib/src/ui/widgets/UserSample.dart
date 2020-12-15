@@ -14,11 +14,11 @@ class UserSample extends StatelessWidget {
     return ListTile(
       onTap: ()=>Navigator.of(context).push(MaterialPageRoute(builder: (_)=> ExpandedUser(user: user,))),
 
-      title: Text(user.nickName, style: TextStyle(fontWeight: FontWeight.bold),),
+      title: Text(user.login, style: TextStyle(fontWeight: FontWeight.bold),),
 
       subtitle: Text(user.url, overflow: TextOverflow.ellipsis,),
 
-      leading: ImageGit(user.photoUrl, 40)
+      leading: ImageGit(user.avatar_url, 40)
     );
   }
 }

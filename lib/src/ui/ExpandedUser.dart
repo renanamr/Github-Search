@@ -20,11 +20,11 @@ class ExpandedUser extends StatelessWidget {
 
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: ImageGit(user.photoUrl, 100),
+            child: ImageGit(user.avatar_url, 100),
           ),
 
 
-          Text(user.nickName, textAlign: TextAlign.center,style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20,),),
+          Text(user.login, textAlign: TextAlign.center,style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20,),),
 
           Text(user.url, textAlign: TextAlign.center,style: const TextStyle(fontSize: 16),),
         ],

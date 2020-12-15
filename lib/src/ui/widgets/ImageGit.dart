@@ -16,7 +16,7 @@ class ImageGit extends StatelessWidget {
         color: Colors.transparent,
           shape: BoxShape.circle,
           image: DecorationImage(
-              fit: BoxFit.cover,
+              fit: BoxFit.contain,
               image: NetworkImage(
                   photoUrl)
           )
